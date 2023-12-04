@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Proyecto.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="nav-link" asp-area="" asp-controller="Layout3" asp-action="Index" style="color: #56456a; text-align: center"><i class="fa-solid fa-house"></i> Principal</a>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-3">
+                        <li class="nav-item">
+                            @{ var id = User.Claims.Where(s => s.Type == "Id").Select(s => Convert.ToByte(s.Value)).FirstOrDefault();}
+                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Perfil" asp-route-id="@id" style="color: #56456a; text-align: center">Mi perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Agregar" style="color: #56456a; text-align: center">Publicar algo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" style="color: #56456a; text-align: center;">Categorías <i class="fa fa-caret-down"></i></a>
+                            <ul style="list-style: none;">
+                                <li>
+                                    <a class="nav-link" asp-area="" asp-action="Arte" asp-controller="Layout2" style="color: #56456a; text-align: left;">Arte <i class="fa-solid fa-palette"></i></a>
+                                    <a class="nav-link" asp-area="" asp-action="Fotografia" asp-controller="Layout2" style="color: #56456a; text-align: left;">Fotografía <i class="fa-solid fa-camera-retro"></i></a>
+                                    <a class="nav-link" asp-area="" asp-action="Wallpaper" asp-controller="Layout2" style="color: #56456a; text-align: left;">Wallpapers <i class="fa-solid fa-images"></i></a>
+                                </li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Layout3" asp-action="Usuarios" style="color: #56456a; text-align: center">Usuarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Salir" style="color: #56456a; text-align: center">Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+

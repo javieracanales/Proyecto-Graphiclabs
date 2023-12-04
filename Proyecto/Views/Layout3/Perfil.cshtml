@@ -1,0 +1,66 @@
+﻿@model Proyecto.Models.Usuario;
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="site.css" />
+@{
+    ViewData["Title"] = "Perfil";
+    Layout = "_Layout3";
+}
+<br />
+<div class="container" style="background-color: #fffaf2; padding:15px; border-radius:5px;">
+    <div class="row">
+        <div class="container">
+            <img style="border-radius:50%; width:200px; height:200px;" class="card-img-top" src="data:image/jpg; base64, @Model.Imagen">
+        </div>
+        <div class="col-sm">
+            <div>
+                <label style="color:#56456a">@Model.Apodo</label>
+            </div>
+            <div>
+                <label style="color:#56456a">Teléfono de contacto: @Model.Telefono</label>
+            </div>
+            <div>
+                <label style="color:#56456a">Email de contacto: @Model.Email</label>
+            </div>
+            <div>
+                <label style="color:#56456a">En Graphiclabs desde: @Model.Fecha</label>
+            </div>
+        </div>
+    </div>
+    <div style="text-align:right;">
+        <a class="btn btn-success" href="~/Login/EditarPerfil/@Model.Id">Editar mi perfil</a>
+        <input type="button" value="Borrar mi cuenta" class="btn btn-danger" />
+    </div>
+</div>
+
+<br />
+<div>
+    <h4>Mis publicaciones</h4>
+</div>
+<div>
+    <div class="row">
+        @Html.Partial("Producto", ViewData["Producto"])
+    </div>
+</div>
+<br />
+<div>
+    <h4>Mis favoritos</h4>
+</div>
+<div class="orden" style="text-align:right;">
+    <button style="border-radius: 3px; color: white; background-color: #56456a; border-color: #56456a; " onclick="myFunction()" class="dropboton">Ordenar por <i class="fa-solid fa-sliders"></i></button>
+    <div id="myOrden" class="orden-content">
+        <a style="color: #56456a;" asp-action="MasPopular" asp-controller="Productos">Mas popular <i class="fa-solid fa-arrow-down-a-z"></i></a>
+        <a style="color: #56456a;" asp-action="MenorPrecio" asp-controller="Usuario">Menor precio <i class="fa-solid fa-arrow-down-short-wide"></i></a>
+        <a style="color: #56456a;" asp-action="MayorPrecio" asp-controller="Productos">Mayor precio <i class="fa-solid fa-arrow-up-wide-short"></i></a>
+        <a style="color: #56456a;" asp-action="AlfabetoAsc" asp-controller="Productos">Alfabeto asc <i class="fa-solid fa-arrow-up-a-z"></i></a>
+        <a style="color: #56456a;" asp-action="AlfabetoDesc" asp-controller="Productos">Alfabeto desc <i class="fa-solid fa-arrow-down-a-z"></i></a>
+    </div>
+</div>
+<br/>
+<div>
+    <div>
+        @Html.Partial("Favorito", ViewData["Favorito"])
+    </div>
+</div>
+<script>function myFunction() {
+        document.getElementById("myOrden").classList.toggle("show");
+    }</script>

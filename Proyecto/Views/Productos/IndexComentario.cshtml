@@ -1,0 +1,42 @@
+﻿@model Proyecto.Models.Comentario;
+
+@{
+    ViewData["Title"] = Model.IdProductoNavigation.Titulo;
+}
+
+@Html.Partial("ModalComentario")
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="site.css" />
+<br />
+<h3 style="text-align: center; color: #56456a; ">@Model.IdProductoNavigation.Titulo</h3>
+@Html.Hidden("id", Model.IdProductoNavigation.Id)
+<div class="container">
+    <div class="col">
+        <div style="text-align:center;">
+            <img style="max-height: 500px; max-width: 500px; border-radius: 3px;" src="data:image/jpg; base64,@Model.IdProductoNavigation.Imagen" />
+            <div class="row">
+                <a href="">@Model.IdProductoNavigation.IdUsuario</a>
+                <label style="text-align: center;">@Model.IdProductoNavigation.Descripcion</label>
+                <div style="text-align:center;">
+                    <label style="width: fit-content; background-color: #f8efb8; border-radius: 6px; border-style: solid; border-width: 3px 3px 3px 3px; border-color: #f8efb8 ">$ @Model.IdProductoNavigation.Precio</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br /><div class="container">
+    <div class="row">
+        <label style="color: #56456a; border-width: 2px 2px 2px 2px; border-color: #f8efb8;">Comentar</label>
+        <div>
+            @Html.TextAreaFor(model => model.Comentario1)
+            <input type="submit" data-toggle="modal" data-target="#exampleModal" style="width: fit-content; background-color: #eac44c; border-color: #f8efb8; color: #56456a;" />
+        </div>
+        <div class="col">
+            <div style="text-align: center;">
+                <label style="color: #56456a;">Comentarios</label>
+                @Html.Partial("Comentarios", ViewData["Comentarios"])
+            </div>
+        </div>
+    </div>
+</div>
+

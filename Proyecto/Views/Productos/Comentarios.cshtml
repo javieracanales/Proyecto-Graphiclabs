@@ -1,0 +1,15 @@
+﻿@model List<Proyecto.Models.Comentario>
+
+@foreach (var item in Model)
+{
+    <label>@item.IdProducto</label>
+    <div class="container" style="background-color: #f3df9a; padding-top:10px; padding-bottom:10px">
+        <div class="col-sm">
+            <img style="border-radius:50%" width="50" height="50" src="data:image/jpg; base64,@item.IdUsuarioNavigation.Imagen " />
+            <label>@item.IdUsuarioNavigation.Apodo: </label>
+            <label>@item.Comentario1</label>
+            <br />
+            <label>@item.Fecha.ToString()</label>
+        </div>
+    </div>
+}

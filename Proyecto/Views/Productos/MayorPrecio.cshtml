@@ -1,0 +1,85 @@
+﻿@model List<Proyecto.Models.Producto>
+
+@{
+    ViewData["Title"] = "Inicio";
+}
+@Html.Partial("ModalLike")
+<br />
+<body style="background-color: #fffaf2">
+    <div class="container" style="background-color:white; padding-top:10px; padding-right:40px; padding-left:40px; padding-bottom:10px;">
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!-- Button trigger modal -->
+        <div style="text-align:right;">
+            <label>Bienvenido a Graphiclabs, realiza tu primera publicación ya!</label>
+            <label style="color:white">' '</label>
+            <!--<button type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModal" style="color: white; background-color: #56456a">Nueva publicación <i class="fa-solid fa-circle-plus fa-beat-fade" style="color:white;"></i></button>-->
+            <button type="button" class="btn btn-default" style="color: white; background-color: #56456a" onclick="document.location.href='@Url.Content("~/Home/Agregar")'">Publicar algo</button>
+        </div>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <br />
+        <div style="text-align: right; border-radius: 3px; color: white; background-color: #56456a; border-color: #56456a; padding-top:10px; padding-bottom:10px; padding-left:10px; padding-right:10px">
+            <form asp-controller="Home" asp-action="Index">
+                <div>
+                    <input type="text" name="busqueda" placeholder="Buscar por título, descripción o artista... " style="width:400px;" />
+                    <input type="submit" value="Buscar" class="btn btn-sm" style="color: white; background-color: #56456a; border-color: #56456a;" />
+                </div>
+            </form>
+        </div>
+        <h3 style="color:#56456a;">Publicaciones</h3> <h3>[Mayor Precio]</h3>
+        <div class="orden" style="text-align:right;">
+            <button style="border-radius: 3px; color: white; background-color: #56456a; border-color: #56456a; " onclick="myFunction()" class="dropboton">Ordenar por <i class="fa-solid fa-sliders"></i></button>
+            <div id="myOrden" class="orden-content">
+                <a style="color: #56456a;" asp-action="MasPopular" asp-controller="Productos">Mas popular <i class="fa-solid fa-arrow-down-a-z"></i></a>
+                <a style="color: #56456a;" asp-action="MenorPrecio" asp-controller="Productos">Menor precio <i class="fa-solid fa-arrow-down-short-wide"></i></a>
+                <a style="color: #56456a;" asp-action="MayorPrecio" asp-controller="Productos">Mayor precio <i class="fa-solid fa-arrow-up-wide-short"></i></a>
+                <a style="color: #56456a;" asp-action="AlfabetoAsc" asp-controller="Productos">Alfabeto asc <i class="fa-solid fa-arrow-up-a-z"></i></a>
+                <a style="color: #56456a;" asp-action="AlfabetoDesc" asp-controller="Productos">Alfabeto desc <i class="fa-solid fa-arrow-down-a-z"></i></a>
+            </div>
+        </div>
+        <br />
+        <div class="col-auto">
+            <br />
+            <div class="container">
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-lg-4">
+                            <div class="panel panel-default" id="tablaProductos">
+                                <div class="container" style="background-color: #f3df9a; border-radius: 3px; border-style: solid; border-width: 2px 2px 2px 2px; border-color: white; width: 330px; height: 490px;padding-right:10px;">
+                                    <div class="panel-heading" style="text-align: center; color: #887674;">@item.Titulo</div>
+                                    <div class="panel-body">
+                                        <img class="img-responsive" src="data:image/jpg; base64, @item.Imagen" style="max-width: 300px; min-width: 300px; max-height: 200px; min-height: 200px; border-radius: 3px" />
+                                        <p style="color: #56456a; text-align:center">@item.IdUsuarioNavigation?.Apodo</p>
+                                        <div class="container" style="max-height: 80px; max-width: 300px">
+                                            <p style="color:#887674;">@item.Descripcion</p>
+                                        </div>
+                                        <p style="color: #887674; font-size: 18px;">$ @item.Precio</p>
+                                        <p style="color: #887674; width: fit-content; background-color: #fffbe0; border-radius: 6px; border-style: solid; border-width: 3px 3px 3px 3px; border-color: #fffbe0 ">@item.IdCategoriaNavigation.Nombre</p>
+
+                                        <div class="modal-footer">
+                                            @Html.Hidden("idPro", item.Id)
+                                            <i class="fa-solid fa-heart-circle-plus fa-beat" data-toggle="modal" data-target="#modalLike" style="color: #8a4b5f;"></i>
+                                            <label style="color: #8a4b5f;"> Me gusta: @(item.Favoritos.Count) </label>
+                                            <label style="color: #887674;"> ||</label>
+                                            <a href="~/Productos/IndexComentario/@item.Id" role="button" style="color: #887674;"> Ir a la publicación</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>function myFunction() {
+        document.getElementById("myOrden").classList.toggle("show");
+    }</script>
+

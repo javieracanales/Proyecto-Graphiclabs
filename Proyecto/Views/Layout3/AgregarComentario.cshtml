@@ -1,0 +1,15 @@
+﻿@model Proyecto.Models.Comentario;
+
+    <div class="container">
+        <div class="row">
+            <label style="color: #56456a; border-width: 2px 2px 2px 2px; border-color: #f8efb8;">Comentar</label>
+            @Html.TextAreaFor(model => model.Comentario1)
+            <input type="submit" name="comentario1" style="width: fit-content; background-color: #eac44c; border-color: #f8efb8; color: #56456a;" />
+            <div class="col">
+                <div style="text-align: center;">
+                    <label style="color: #56456a;">Comentarios</label>
+                    <label>Todavía no hay comentarios...</label>
+                </div>
+            </div>
+        </div>
+    </div>

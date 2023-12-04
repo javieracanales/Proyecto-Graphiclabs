@@ -1,0 +1,297 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Proyecto
+build_property.RootNamespace = Proyecto
+build_property.ProjectDir = /Users/javieracanales/Projects/Proyecto/Proyecto/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/javieracanales/Projects/Proyecto/Proyecto
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Home/Agregar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BZ3JlZ2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Home/LasReglas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9MYXNSZWdsYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Home/Modal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Nb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Home/ModalLike.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Nb2RhbExpa2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout2/AgregarComentario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0Mi9BZ3JlZ2FyQ29tZW50YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout2/AlfabetoAsc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0Mi9BbGZhYmV0b0FzYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout2/AlfabetoDesc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0Mi9BbGZhYmV0b0Rlc2MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout2/Arte.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0Mi9BcnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout2/Comentarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0Mi9Db21lbnRhcmlvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout2/Fotografia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0Mi9Gb3RvZ3JhZmlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout2/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0Mi9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout2/IndexComentario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0Mi9JbmRleENvbWVudGFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout2/IndexProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0Mi9JbmRleFByb2R1Y3RvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout2/MasPopular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0Mi9NYXNQb3B1bGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout2/MayorPrecio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0Mi9NYXlvclByZWNpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout2/MenorPrecio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0Mi9NZW5vclByZWNpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout2/Wallpaper.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0Mi9XYWxscGFwZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/AgregarComentario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9BZ3JlZ2FyQ29tZW50YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/AlfabetoAsc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9BbGZhYmV0b0FzYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/AlfabetoDesc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9BbGZhYmV0b0Rlc2MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/Arte.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9BcnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/Banear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9CYW5lYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/Baneos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9CYW5lb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/Comentarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9Db21lbnRhcmlvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9FbGltaW5hci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/Favorito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9GYXZvcml0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/Fotografia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9Gb3RvZ3JhZmlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/IndexComentario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9JbmRleENvbWVudGFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/IndexProducto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9JbmRleFByb2R1Y3RvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/MasPopular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9NYXNQb3B1bGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/MayorPrecio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9NYXlvclByZWNpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/MenorPrecio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9NZW5vclByZWNpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/Perfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9QZXJmaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/Producto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9Qcm9kdWN0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/Usuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9Vc3Vhcmlvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Layout3/Wallpaper.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTGF5b3V0My9XYWxscGFwZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Login/EditarPerfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vRWRpdGFyUGVyZmlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Login/Favorito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vRmF2b3JpdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Login/Perfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vUGVyZmlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Login/Producto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vUHJvZHVjdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Login/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vUmVnaXN0cm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/Agregar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL0FncmVnYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/AlfabetoAsc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL0FsZmFiZXRvQXNjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/AlfabetoDesc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL0FsZmFiZXRvRGVzYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/Arte.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL0FydGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/Comentarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL0NvbWVudGFyaW9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/Fotografia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL0ZvdG9ncmFmaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/IndexComentario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL0luZGV4Q29tZW50YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/MasPopular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL01hc1BvcHVsYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/MayorPrecio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL01heW9yUHJlY2lvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/MenorPrecio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL01lbm9yUHJlY2lvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/ModalComentario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL01vZGFsQ29tZW50YXJpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/ModalLike.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL01vZGFsTGlrZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Productos/Wallpaper.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdG9zL1dhbGxwYXBlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Shared/_Layout2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Shared/_Layout3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Usuario/AlfabetoAsc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9BbGZhYmV0b0FzYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Usuario/AlfabetoDesc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9BbGZhYmV0b0Rlc2MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Usuario/MasPopular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9NYXNQb3B1bGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Usuario/MayorPrecio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9NYXlvclByZWNpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Usuario/MenorPrecio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpby9NZW5vclByZWNpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/javieracanales/Projects/Proyecto/Proyecto/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-c6xlsi7dvk

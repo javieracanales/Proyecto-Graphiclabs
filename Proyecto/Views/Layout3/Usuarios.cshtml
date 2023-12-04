@@ -1,0 +1,40 @@
+﻿@model List<Proyecto.Models.Usuario>
+@{
+    ViewData["Title"] = "Usuarios";
+    Layout = "~/Views/Shared/_Layout3.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<br />
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nickname</th>
+            <th scope="col">Email</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Rol</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Apodo</td>
+                <td>@item.Email</td>
+                <td>@item.Telefono</td>
+                <td>@item.Fecha</td>
+                <td>@item.IdRolesNavigation.Descripcion</td>
+                <td>
+                    <a class="btn btn-danger" href="~/Layout3/Eliminar/@item.Id">Eliminar</a>
+                    <a class="btn btn-default" style="color: #b64b65;" href="~/Layout3/Banear">Banear</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<h3>Baneos</h3>
+@Html.Partial("Baneos", ViewData["Baneos"])

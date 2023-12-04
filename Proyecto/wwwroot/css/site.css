@@ -1,0 +1,107 @@
+﻿html {
+    font-size: 14px;
+    background-color: #f8efc8;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.bordeTituloPublicacion {
+    font-size: 20px;
+    text-align: center;
+}
+
+.bordeTituloPagina {
+    -webkit-text-stroke: 1px #00517c;
+    text-align: center;
+}
+
+.botonFlotante {
+    position: fixed;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px;
+    transition: all 500ms ease;
+}
+
+.navbar li a:hover {
+    background-color: #f8efb8;
+    border-radius: 4px;
+}
+
+
+.navbar li:hover > ul {
+    display: block;
+}
+
+.navbar li ul {
+    display: none;
+}
+
+.dropboton {
+    background-color: #3498DB;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+    .dropboton:hover, .dropboton:focus {
+        background-color: #2980B9;
+    }
+
+.orden {
+    position: relative;
+    display: inline-block;
+}
+
+.orden-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    min-width: 170px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .orden-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+.orden a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.fa-solid fa-magnifying-glass :hover {
+    background-color: #f8efb8;
+    border-radius: 4px;
+}
+
+.formresgistro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -49%);
+}

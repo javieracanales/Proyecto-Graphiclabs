@@ -1,0 +1,49 @@
+﻿@model List<Proyecto.Models.Producto>
+@{var id = User.Claims.Where(s => s.Type == "Id").Select(s => Convert.ToByte(s.Value)).FirstOrDefault();}
+<div class="orden">
+    <button style="border-radius: 3px; color: white; background-color: #56456a; border-color: #56456a; " onclick="myFunction()" class="dropboton">Ordenar por <i class="fa-solid fa-sliders"></i></button>
+    <div id="myOrden" class="orden-content" style="text-align: right;">
+        <a style="color: #56456a; text-align: right;" asp-action="MasPopular" asp-controller="Usuario" asp-route-id="@id">Mas popular <i class="fa-solid fa-arrow-down-a-z"></i></a>
+        <a style="color: #56456a; text-align: right;" asp-action="MenorPrecio" asp-controller="Usuario" asp-route-id="@id">Menor precio <i class="fa-solid fa-arrow-down-short-wide"></i></a>
+        <a style="color: #56456a; text-align: right;" asp-action="MayorPrecio" asp-controller="Usuario" asp-route-id="@id">Mayor precio <i class="fa-solid fa-arrow-up-wide-short"></i></a>
+        <a style="color: #56456a; text-align: right;" asp-action="AlfabetoAsc" asp-controller="Usuario" asp-route-id="@id">Alfabeto asc <i class="fa-solid fa-arrow-up-a-z"></i></a>
+        <a style="color: #56456a; text-align: right;" asp-action="AlfabetoDesc" asp-controller="Usuario" asp-route-id="@id">Alfabeto desc <i class="fa-solid fa-arrow-down-a-z"></i></a>
+    </div>
+</div>
+<div style="color:white">''</div>
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4">
+                <div class="panel panel-default" id="tablaProductos">
+                    <div class="container" style="background-color: #f3df9a; border-radius: 3px; border-style: solid; border-width: 2px 2px 2px 2px; border-color: white; width: 330px; height: 490px;padding-right:10px;">
+                        <div class="panel-heading" style="text-align: center; color: #887674;">@item.Titulo</div>
+                        <div class="panel-body">
+                            <img class="img-responsive" src="data:image/jpg; base64, @item.Imagen" style="max-width: 300px; min-width: 300px; max-height: 200px; min-height: 200px; border-radius: 3px" />
+                            <p style="color: #56456a; text-align:center">@item.IdUsuarioNavigation?.Apodo</p>
+                            <div class="container" style="max-height: 80px; max-width: 300px">
+                                <p style="color:#887674;">@item.Descripcion</p>
+                            </div>
+                            <p style="color: #887674; font-size: 18px;">$ @item.Precio</p>
+                            <p style="color: #887674; width: fit-content; background-color: #fffbe0; border-radius: 6px; border-style: solid; border-width: 3px 3px 3px 3px; border-color: #fffbe0 ">@item.IdCategoriaNavigation.Nombre</p>
+
+                            <div class="modal-footer">
+                                @using (Html.BeginForm("Agregar", "favoritos", FormMethod.Post))
+                                {
+                                    <input type="submit" value="Me gusta" style="background-color: #8a4b5f; color: white; border-color: #8a4b5f; border-radius: 3px" />
+                                }
+                                @Html.Hidden("idPro", item.Id)                                <label style="color: #8a4b5f;"> @(item.Favoritos.Count) </label>
+                                <label style="color: #887674;"> ||</label>
+                                <a href="~/Layout2/IndexComentario/@item.Id" role="button" style="color: #887674;">Ir a la publicación</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<script>function myFunction() {
+        document.getElementById("myOrden").classList.toggle("show");
+    }</script>

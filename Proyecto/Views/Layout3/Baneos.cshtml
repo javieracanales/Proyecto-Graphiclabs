@@ -1,0 +1,23 @@
+﻿@model List<Proyecto.Models.Ban>
+<br/>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nickname</th>
+            <th scope="col">Motivo</th>
+            <th scope="col">Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.IdUsuarioNavigation.Apodo</td>
+                <td>@item.Descripcion</td>
+                <td>@item.Estado</td>
+            </tr>
+        }
+    </tbody>
+</table>

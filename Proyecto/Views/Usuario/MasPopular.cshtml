@@ -1,0 +1,56 @@
+﻿@model Proyecto.Models.Usuario;
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="site.css" />
+@{
+    ViewData["Title"] = "Perfil";
+    Layout = "_Layout2";
+    var id = User.Claims.Where(s => s.Type == "Id").Select(s => Convert.ToByte(s.Value)).FirstOrDefault();
+}
+<br />
+<div class="container" style="background-color: #fffaf2; padding:15px; border-radius:5px;">
+    <div class="row">
+        <div class="container">
+            <img style="border-radius:50%; width:200px; height:200px;" class="card-img-top" src="data:image/jpg; base64, @Model.Imagen">
+        </div>
+        <div class="col-sm">
+            <div>
+                <label style="color:#56456a">@Model.Apodo</label>
+            </div>
+            <div>
+                <label style="color:#56456a">Teléfono de contacto: @Model.Telefono</label>
+            </div>
+            <div>
+                <label style="color:#56456a">Email de contacto: @Model.Email</label>
+            </div>
+            <div>
+                <label style="color:#56456a">En Graphiclabs desde: @Model.Fecha</label>
+            </div>
+        </div>
+    </div>
+    <div style="text-align:right;">
+        <a class="btn btn-success" href="~/Login/EditarPerfil/@Model.Id">Editar mi perfil</a>
+        <input type="button" value="Borrar mi cuenta" class="btn btn-danger" />
+    </div>
+</div>
+<br />
+<div>
+    <h4>Mis publicaciones</h4>
+</div>
+<div>
+    <div class="row">
+        @Html.Partial("~/Views/Login/Producto.cshtml", ViewData["Producto"])
+    </div>
+</div>
+<br />
+<div>
+    <h4>Mis favoritos</h4>
+</div>
+<br />
+<div>
+    <div>
+        @Html.Partial("~/Views/Login/Favorito.cshtml", ViewData["Favorito"])
+    </div>
+</div>
+<script>function myFunction() {
+        document.getElementById("myOrden").classList.toggle("show");
+    }</script>
